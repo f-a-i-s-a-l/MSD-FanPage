@@ -38,7 +38,7 @@ body{
     position: absolute;
     height: 35rem;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.5;
     z-index: -2;
 }
 
@@ -46,14 +46,28 @@ body{
    It also shows some words as highlighted, so they're in a separate class .higl 
  */
  #quote{
-     color: rgba(255, 255, 255, 0.776);
+     color: white;
      font-family: 'Passion One', cursive;
      font-size: 3rem;
-     margin-top: 5%;
+     margin-top: 5vh;
  }
  .higl{
-     color: rgba(0, 128, 255, 0.68);
+     color: rgb(0, 128, 255);
  }
+ .quotes{
+     display: flex;
+ }
+ .quotes img{
+    height: 4rem;
+ }
+ #qOpen{
+     justify-content: flex-start;
+     align-items: flex-start;
+ }
+ #qClose {
+    justify-content:flex-end;
+    align-items:flex-end;
+}
 
 
  /* 
@@ -69,7 +83,6 @@ body{
 }
 #center-nav::before{
     content: "";
-    background: rgba(0, 0, 0, 0.646);
     height: 5rem;
     width: 100%;
     position: absolute;
@@ -119,8 +132,30 @@ body{
      border: 2px solid white;
      border-radius: 10px;
      margin: 10px 30px;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
 }
-
+#t20{
+    background: url("../photos/t20.jpg") no-repeat center center/cover;
+    opacity: 0.6;
+}
+#wc{
+    background: url("../photos/wc2011.jpg") no-repeat center center/cover;
+    opacity: 0.6;
+}
+#ct{
+    background: url("../photos/ct2013.jpg") no-repeat center center/cover;
+    opacity: 0.6;
+}
+.einfo{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 /* 
     =========================== Footer =========================================
